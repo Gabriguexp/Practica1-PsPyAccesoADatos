@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica1_PsPyAccesoADatos</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="messages_header">Fichero a visualizar por defecto</string>
+    <string name="reply_title">Seleccione fichero</string>
+
+
+    <string name="settingsMi">Settings</string>
+</resources>

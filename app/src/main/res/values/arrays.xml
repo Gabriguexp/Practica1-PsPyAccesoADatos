@@ -1,0 +1,12 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>historial</item>
+        <item>llamadas</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>historial</item>
+        <item>llamadas</item>
+    </string-array>
+</resources>
