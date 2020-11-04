@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practica1_PsPyAccesoADatos</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="messages_header">File to display by default</string>
+    <string name="reply_title">Pick a file</string>
+    <string name="acept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="permissionsmsg">" The application requires the permissions for its correct working."</string>
+    <string name="permissions">Permissions</string>
+    <string name="empty">Historial is empty</string>
+    <string name="settingsMi">Settings</string>
+</resources>
