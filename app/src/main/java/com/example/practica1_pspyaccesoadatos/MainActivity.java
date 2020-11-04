@@ -82,7 +82,6 @@ debemos poder definir cuál de los dos listados es el que se va a mostrar de for
 
 public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener  {
      private static final int PERMISSIONS = 0;
-     private static final String TAG = MainActivity.class.getName() + "xyzyx";
      private TextView tv1;
 
      private SharedPreferences sharedPreferences;
@@ -126,9 +125,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     }
 
     private void askPermissions() {
-        // READ_PHONE_STATE READ_CALL_LOG
 
-        // IDEA DEL ARRAYLIST ESTA DPM.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int contactPermission = ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS);
             int phoneStatePermission = ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE);

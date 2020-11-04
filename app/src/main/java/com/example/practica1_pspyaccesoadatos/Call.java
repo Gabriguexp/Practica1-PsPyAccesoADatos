@@ -87,12 +87,34 @@ public class Call{
         this.getNumber();
         this.getContactName();
 
-        /* nombre del contacto; año, mes, día, hora, minutos y segundos*/
+        // nombre del contacto; año, mes, día, hora, minutos y segundos
         s+= this.getContactName() + "; " + year + "; " + month + "; " + day + "; " + hour + "; " + min + "; " +
                 sec + "; " +this.getNumber();
         return s;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static Call fromCsvToCall(String linea){
+        Call call;
+        String[] parts = linea.split("; ");
+
+        // 2020; 10; 12; 15; 35; 47; 958123456; Juan López
+
+        // año, mes, día, hora, minutos, segundos,
+        //número entrante, nombre del contacto
+
+        int año = Integer.parseInt(parts[0]);
+        int mes =  Integer.parseInt(parts[1]);
+        int dia =  Integer.parseInt(parts[2]);
+        int hora =  Integer.parseInt(parts[3]);
+        int min =  Integer.parseInt(parts[4]);
+        int sec =  Integer.parseInt(parts[5]);
+        int num =  Integer.parseInt(parts[6]);
+        String contact = parts[7];
+        LocalDateTime time = LocalDateTime.of(año,mes,dia,hora,min,sec);
+        call = new Call(contact,num,time);
+        return call;
+    }
 
 
 }
