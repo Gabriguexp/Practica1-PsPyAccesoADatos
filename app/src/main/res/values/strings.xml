@@ -3,6 +3,11 @@
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="messages_header">Fichero a visualizar por defecto</string>
     <string name="reply_title">Seleccione fichero</string>
+    <string name="acept">Aceptar</string>
+    <string name="deny">Rechazar</string>
+    <string name="permissionsmsg">La aplicacion requiere de los permisos para su correcto funcionamiento.</string>
+    <string name="permissions">Permisos</string>
+    <string name="empty">el historial esta vacio</string>
 
 
     <string name="settingsMi">Settings</string>

@@ -161,15 +161,15 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @SuppressLint("NewApi")
     private void detailedExplanation() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Permisos");
-        builder.setMessage("La aplicacion requiere de los permisos para su correcto funcionamiento.");
-        builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+        builder.setTitle(R.string.permissions);
+        builder.setMessage(R.string.permissionsmsg);
+        builder.setPositiveButton(R.string.acept, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 requestPermissions(new String[]{Manifest.permission.READ_CONTACTS, Manifest.permission.READ_PHONE_STATE, Manifest.permission.READ_CALL_LOG },PERMISSIONS);
             }
         });
-        builder.setNegativeButton("Rechazar", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.deny, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 finish();
@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
             }
             tv1.setText(texto);
         } catch(FileNotFoundException ex){
-            tv1.setText("el historial esta vacio");
+            tv1.setText(R.string.empty);
         } catch (IOException ex){
         }
     }
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
             }
             tv1.setText(texto);
         } catch(FileNotFoundException ex){
-            tv1.setText("el historial esta vacio");
+            tv1.setText(R.string.empty);
         } catch (IOException ex){
         }
     }
